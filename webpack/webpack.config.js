@@ -30,8 +30,9 @@ module.exports = {
               "pages",
               "containers",
               "api",
-              "util",
-              "redux"
+              "utils",
+              "redux",
+              "config",
             ]),
           },
         },
@@ -59,7 +60,7 @@ module.exports = {
           {
             loader: "file-loader",
             options: {
-              name: '[path][name].[ext]',
+              name: "[path][name].[ext]",
             },
           },
         ],

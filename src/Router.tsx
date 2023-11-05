@@ -1,24 +1,21 @@
-
-import Register from "@pages/Register";
+import Welcome from "@pages/Welcome";
 import ScreenLayout from "./ScreenLayout";
 import React from "react";
 import { createHashRouter, RouterProvider } from "react-router-dom";
-
+import PageHome from "@pages/PageHome";
 
 const router = createHashRouter([
   {
     element: <ScreenLayout />,
     children: [
-      {
-        path: '/register',
-        element: <Register/>
-      }
-  ],
+      { path: "/", element: <PageHome /> },
+      { path: "/welcome", element: <Welcome /> },
+    ],
   },
 ]);
 
-const MyRouter = () => {
+const Router = () => {
   return <RouterProvider router={router} />;
 };
 
-export default MyRouter;
+export default Router;
