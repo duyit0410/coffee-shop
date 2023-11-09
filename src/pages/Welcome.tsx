@@ -1,6 +1,6 @@
-import Icon from "@components/Icon";
-import Input from "@components/Input";
-import Txt from "@components/Text/Txt";
+import Icon from "@components/atoms/Icon";
+import Input from "@components/atoms/Input";
+import Txt from "@components/atoms/Text/Txt";
 import Container from "@layouts/Content";
 import React, {
   ChangeEvent,
@@ -10,7 +10,7 @@ import React, {
   useState,
 } from "react";
 import logoImg from "@assets/images/logo.jpg";
-import Checkbox from "@components/Checkbox";
+import Checkbox from "@components/atoms/Checkbox";
 import classNames from "classnames";
 import useWelcome from "@hooks/useWelcome";
 import { useGoogleLogin } from "@react-oauth/google";

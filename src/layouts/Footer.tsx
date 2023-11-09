@@ -67,7 +67,7 @@ interface IFooter extends PropsWithChildren {
 }
 const Footer = ({ children, className }: IFooter) => {
   return (
-    <div className={classNames(className, "shrink-0 pb-8")}>
+    <div className={classNames(className, "shrink-0")}>
       <Container>{children}</Container>
     </div>
   );

@@ -5,14 +5,15 @@ import Container from "./Container";
 interface IContent extends PropsWithChildren {
   className?: string;
   hfull?: boolean;
+  noPadding?: boolean;
 }
-const Content = ({ className, children, hfull = true }: IContent) => {
+const Content = ({ className, children, noPadding }: IContent) => {
   return (
     <div
       id="content"
-      className={classNames(className, "h-full overflow-scroll")}
+      className={classNames(className, "h-full overflow-scroll pb-5")}
     >
-      <Container>{children}</Container>
+      <Container noPadding={noPadding}>{children}</Container>
     </div>
   );
 };

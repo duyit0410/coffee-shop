@@ -22,8 +22,8 @@ const Input = ({
     <div
       className={classnames(
         "flex items-center ",
-        style ?? " gap-2 w-full px-3 h-10 sm:h-[60px] bg-white rounded-2xl",
-        border ?? "border-1 border-solid border-black",
+        style ?? " gap-2 w-full px-3 h-8 sm:h-[60px] bg-white rounded-3xl",
+        border ?? "border-[1px] border-solid border-black/10",
         className
       )}
     >

@@ -2,7 +2,7 @@ import React, { useMemo } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import classnames from "classnames";
 import classNames from "classnames";
-import Txt from "@components/Text/Txt";
+import Txt from "@components/atoms/Text/Txt";
 
 const BottomNav = () => {
   const pathname = useLocation().pathname;

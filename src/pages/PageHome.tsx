@@ -1,6 +1,11 @@
-import Icon from "@components/Icon";
-import Txt from "@components/Text/Txt";
+import Icon from "@components/atoms/Icon";
+import Txt from "@components/atoms/Text/Txt";
+import HeaderSimple from "@components/oganisms/Header/HeaderSimple";
+import CotnainerActivity from "@containers/Activity/CotnainerActivity";
+import ContainerBook from "@containers/Book/ContainerBook";
+import ContainerMain from "@containers/Main/ContainerMain";
 import ContainerProfile from "@containers/Profile/ContainerProfile";
+import ContainerStore from "@containers/Store/ContainerStore";
 import Content from "@layouts/Content";
 import Footer from "@layouts/Footer";
 import classNames from "classnames";
@@ -37,8 +42,13 @@ const PageHome = () => {
 
   return (
     <>
-      <ContainerProfile />
+      <HeaderSimple />
 
+      {/* <ContainerProfile /> */}
+      {/* <ContainerStore /> */}
+      {/* <CotnainerActivity /> */}
+      {/* <ContainerBook /> */}
+      <ContainerMain />
       <Footer className="shadow-1">
         <div className="flex py-3">
           {footerData.map((item, i) => (

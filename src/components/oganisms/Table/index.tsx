@@ -1,5 +1,5 @@
-import RowIcon, { IRowIcon } from "@components/Row/RowIcon";
-import Wrapper from "@components/Wrapper";
+import RowIcon, { IRowIcon } from "@components/atoms/Row/RowIcon";
+import Wrapper from "@components/atoms/Wrapper";
 import classNames from "classnames";
 import React, { memo } from "react";
 
@@ -9,7 +9,7 @@ interface ITable {
 }
 const Table = ({ data, className }: ITable) => {
   return (
-    <Wrapper className={classNames(className, "mt-3")}>
+    <Wrapper className={classNames(className, "mt-3 bg-white")}>
       {data.map((item, i) => (
         <RowIcon
           {...item}

@@ -4,7 +4,7 @@ declare global {
     onError: (error) => void;
   }
 
-  type ISz = 12 | 16 | 20 | 24 | 32;
+  type ISz = 10 | 12 | 14 | 16 | 20 | 24 | 32;
 
   interface IUser {
     email: string;

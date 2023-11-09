@@ -1,7 +1,7 @@
-import Button from "@components/Button";
-import Icon from "@components/Icon";
-import Table from "@components/Table";
-import Txt from "@components/Text/Txt";
+import Button from "@components/atoms/Button";
+import Icon from "@components/atoms/Icon";
+import Table from "@components/oganisms/Table";
+import Txt from "@components/atoms/Text/Txt";
 import Content from "@layouts/Content";
 import Footer from "@layouts/Footer";
 import Header from "@layouts/Header";
@@ -76,7 +76,7 @@ const ContainerProfile = () => {
 
   return (
     <>
-      <Header className="bg-app">
+      <Header className="bg-app py-6">
         <div className="flex gap-2 items-center">
           <div className="rounded-full h-[80px] w-[80px] bg-red"></div>
           <div>
@@ -94,10 +94,8 @@ const ContainerProfile = () => {
         {data.map((item, i) => (
           <Session key={i} {...item} />
         ))}
+        <Button text="Đăng xuất" className="mt-5" />
       </Content>
-      <Footer>
-        <Button text="Đăng xuất" />
-      </Footer>
     </>
   );
 };

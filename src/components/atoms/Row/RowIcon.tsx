@@ -1,7 +1,7 @@
-import Icon from "@components/Icon";
-import Txt from "@components/Text/Txt";
+import Icon from "@components/atoms/Icon";
+import Txt from "@components/atoms/Text/Txt";
 import classNames from "classnames";
-import React from "react";
+import React, { memo } from "react";
 
 export interface IRowIcon {
   icon: string;
@@ -24,4 +24,4 @@ const RowIcon = ({ icon, onClick, text, className }: IRowIcon) => {
   );
 };
 
-export default RowIcon;
+export default memo(RowIcon);

@@ -7,7 +7,7 @@ interface IHeader extends PropsWithChildren {
 }
 const Header = ({ children, className }: IHeader) => {
   return (
-    <div className={classNames(className, "py-6")}>
+    <div className={classNames(className)}>
       <Container>{children}</Container>
     </div>
   );
