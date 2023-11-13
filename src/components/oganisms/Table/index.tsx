@@ -9,7 +9,7 @@ interface ITable {
 }
 const Table = ({ data, className }: ITable) => {
   return (
-    <Wrapper className={classNames(className, "mt-3 bg-white")}>
+    <Wrapper wfull className={classNames(className, "mt-3 bg-white")}>
       {data.map((item, i) => (
         <RowIcon
           {...item}

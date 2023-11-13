@@ -12,7 +12,7 @@ import HeaderSimple from "@components/oganisms/Header/HeaderSimple";
 const ContainerStore = () => {
   return (
     <>
-      <Container clasName="mt-3">
+      <Container className="mt-3">
         <div className="flex items-center justify-between gap-5">
           <Input
             className="shadow-1"

@@ -1,8 +1,8 @@
 import { szToClass } from "@utils/convert";
 import classNames from "classnames";
-import React, { ReactNode } from "react";
+import React, { ReactNode, memo } from "react";
 
-interface ITxt {
+export interface ITxt {
   sz?: ISz;
   className?: string;
   onClick?: () => void;
@@ -16,4 +16,4 @@ const Txt = ({ className, onClick, sz = 16, text }: ITxt) => {
   );
 };
 
-export default Txt;
+export default memo(Txt);

@@ -42,13 +42,13 @@ const PageHome = () => {
 
   return (
     <>
-      <HeaderSimple />
+      {step !== 4 && <HeaderSimple />}
+      {step === 0 && <ContainerMain />}
+      {step === 1 && <ContainerBook />}
+      {step === 2 && <CotnainerActivity />}
+      {step === 3 && <ContainerStore />}
+      {step === 4 && <ContainerProfile />}
 
-      {/* <ContainerProfile /> */}
-      {/* <ContainerStore /> */}
-      {/* <CotnainerActivity /> */}
-      {/* <ContainerBook /> */}
-      <ContainerMain />
       <Footer className="shadow-1">
         <div className="flex py-3">
           {footerData.map((item, i) => (

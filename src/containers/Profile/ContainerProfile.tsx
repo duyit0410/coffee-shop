@@ -1,11 +1,10 @@
 import Button from "@components/atoms/Button";
-import Icon from "@components/atoms/Icon";
 import Table from "@components/oganisms/Table";
 import Txt from "@components/atoms/Text/Txt";
 import Content from "@layouts/Content";
-import Footer from "@layouts/Footer";
-import Header from "@layouts/Header";
+
 import React, { useMemo } from "react";
+import HeaderProfile from "@components/oganisms/Header/HeaderProfile";
 
 const ContainerProfile = () => {
   const data = useMemo(
@@ -40,17 +39,17 @@ const ContainerProfile = () => {
         data: [
           {
             icon: "icon-home",
-            text: "Hồ sơ",
+            text: "Chính sách",
             onClick: () => {},
           },
           {
             icon: "icon-home",
-            text: "Hồ sơ",
+            text: "CT Thành Viên",
             onClick: () => {},
           },
           {
             icon: "icon-home",
-            text: "Hồ sơ",
+            text: "Phiên bản ứng dụng",
             onClick: () => {},
           },
         ],
@@ -60,12 +59,12 @@ const ContainerProfile = () => {
         data: [
           {
             icon: "icon-home",
-            text: "Hồ sơ",
+            text: "câu hỏi thường gặp",
             onClick: () => {},
           },
           {
             icon: "icon-home",
-            text: "Hồ sơ",
+            text: "Phản hồi & hỗ trợ",
             onClick: () => {},
           },
         ],
@@ -76,20 +75,7 @@ const ContainerProfile = () => {
 
   return (
     <>
-      <Header className="bg-app py-6">
-        <div className="flex gap-2 items-center">
-          <div className="rounded-full h-[80px] w-[80px] bg-red"></div>
-          <div>
-            <div className="flex h-max font-bold">
-              <Txt text="duy thanh" />
-              <div className="h-full w-[2px] bg-black" />
-              <Txt text="thành viên" className="uppercase" />
-            </div>
-            <Line icon={"icon-home"} value={0} label={"DRIPS"} />
-            <Line icon={"icon-home"} value={0} label={"Trả trước"} />
-          </div>
-        </div>
-      </Header>
+      <HeaderProfile />
       <Content>
         {data.map((item, i) => (
           <Session key={i} {...item} />
@@ -99,14 +85,6 @@ const ContainerProfile = () => {
     </>
   );
 };
-
-const Line = ({ label, value, icon }) => (
-  <div className="flex gap-1 items-center">
-    <Icon className={icon} />
-    <Txt text={label + ":"} />
-    <Txt text={value} className="font-bold" />
-  </div>
-);
 
 const Session = ({ title, data }) => (
   <div className="mt-5">
